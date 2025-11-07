@@ -5,23 +5,27 @@ function NavBar() {
     <>
       <div className="flex items-center justify-between p-4 bg-black shadow-sm">
         <nav className="flex gap-15">
-          <Link to="/" className="hover:text-blue-600 transition">
+          <Link to="/" className="transition hover:text-blue-600">
             HOME
           </Link>
 
-          <Link to="/about" className="hover:text-blue-600 transition">
+          <Link to="/about" className="transition hover:text-blue-600">
             about
           </Link>
 
-          <Link to="/Skills" className="hover:text-blue-600 transition">
+          <Link to="/skills" className="transition hover:text-blue-600">
             Skills
           </Link>
 
-          <Link to="/Projects" className="hover:text-blue-600 transition">
+          <Link to="/projects" className="transition hover:text-blue-600">
             Projects
           </Link>
 
-          <Link to="/contact" className="hover:text-blue-600 transition">
+          <Link to="/profile" className="transition hover:text-blue-600">
+            Perfil
+          </Link>
+
+          <Link to="/contact" className="transition hover:text-blue-600">
             Contact
           </Link>
         </nav>

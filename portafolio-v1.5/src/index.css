@@ -2,7 +2,7 @@
 
 @layer base {
   body {
-    @apply bg-black text-white;
+    @apply text-white bg-black;
   }
 
   /**
@@ -123,6 +123,6 @@
 * Botones
 */
 .btn-white {
-  @apply px-6 py-2 rounded-lg font-semibold uppercase text-black bg-white hover:bg-gray-200 transition-all duration-300;
+  @apply px-6 py-2 font-semibold text-black uppercase transition-all duration-300 bg-white rounded-lg hover:bg-gray-200;
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
 }

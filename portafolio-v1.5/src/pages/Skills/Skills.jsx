@@ -1,9 +1,7 @@
-import React from 'react';
-
 function habilidades() {
   const skillCategories = [
     {
-      category: '🧰 Languages',
+      category: 'Languages',
       skills: ['HTML5', 'CSS3', 'JavaScript', 'PHP', 'SQL', 'Unix Shell'],
     },
     {
@@ -25,7 +23,7 @@ function habilidades() {
   ];
 
   const FloatingText = ({ text }) => (
-    <h2 className="text-4xl md:text-5xl font-futuristic text-gray-200 text-center mb-10">
+    <h2 className="mb-10 text-4xl text-center text-gray-200 md:text-5xl font-futuristic">
       {text.split('').map((char, index) => (
         <span key={index} className="floating-letter" style={{ animationDelay: `${index * 0.05}s` }}>
           {char}
@@ -35,17 +33,17 @@ function habilidades() {
   );
 
   return (
-    <section className="py-16 bg-black text-white">
-      <div className="max-w-6xl mx-auto px-4">
+    <section className="py-16 text-white bg-black">
+      <div className="max-w-6xl px-4 mx-auto">
         <FloatingText text="Mis Habilidades" />
 
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid gap-12 md:grid-cols-2">
           {skillCategories.map((cat, index) => (
             <div key={index} className="animate-fade-slide">
-              <h3 className="text-2xl font-serif mb-4 text-gray-200">{cat.category}</h3>
-              <ul className="list-disc list-inside space-y-2 text-gray-400">
+              <h3 className="mb-4 font-serif text-2xl text-gray-200">{cat.category}</h3>
+              <ul className="space-y-2 text-gray-400 list-disc list-inside">
                 {cat.skills.map((skill, i) => (
-                  <li key={i} className="hover:text-white transition-colors">
+                  <li key={i} className="transition-colors hover:text-white">
                     {skill}
                   </li>
                 ))}
