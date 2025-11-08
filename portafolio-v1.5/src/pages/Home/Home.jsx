@@ -5,7 +5,7 @@ import FloatingParagraph from '@/components/FloatingParagraph';
 
 function Home() {
   return (
-    <div className="flex flex-col items-center text-center logo-container">
+    <div className="flex flex-col items-center text-center logo-container mt-13">
       <Link to="/">
         <img src={logo_soylion} className="logo soylion" alt="logo soylion" />
       </Link>

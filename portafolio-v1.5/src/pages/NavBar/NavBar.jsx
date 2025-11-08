@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import ButtonCV from '@/components/buttons/ButtonCV';
 
 function NavBar() {
   return (
@@ -10,7 +11,7 @@ function NavBar() {
           </Link>
 
           <Link to="/about" className="transition hover:text-blue-600">
-            about
+            About Me
           </Link>
 
           <Link to="/skills" className="transition hover:text-blue-600">
@@ -30,14 +31,7 @@ function NavBar() {
           </Link>
         </nav>
 
-        <div className="flex gap-4">
-          <button className="btn-white" type="button">
-            Ver CV
-          </button>
-          <button className="btn-white" type="button">
-            Download CV
-          </button>
-        </div>
+        <ButtonCV />
       </div>
     </>
   );
