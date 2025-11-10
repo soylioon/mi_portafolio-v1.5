@@ -4,7 +4,7 @@ import logo_soylion from '@/assets/logo_soylion/soylion.png';
 
 function SobreMi() {
   return (
-    <div className="px-4 py-10">
+    <div className="px-9 py-14 md:px-4 md:py-10">
       <div className="flex flex-col items-center logo-container mb-7">
         <Link to="/">
           <img src={logo_soylion} className="mb-4 logo soylion" alt="logo soylion" />

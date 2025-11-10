@@ -1,4 +1,6 @@
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
+import Icon_contact from '@/components/icon/Contact';
+import FormContact from '@/components/forms/contact/form';
 
 function Contact() {
   return (
@@ -16,24 +18,32 @@ function Contact() {
             </div>
 
             <div className="flex flex-col items-center mt-6 space-y-3">
-              <div className="flex items-center">
-                <h4 className="mr-2 text-lg font-semibold text-cyan-300">Email:</h4>
-                <p className="text-sm">ejemplo1@gmail.com</p>
-              </div>
-
-              <div className="flex items-center">
-                <h4 className="mr-2 text-lg font-semibold text-cyan-300">Email:</h4>
-                <p className="text-sm">ejemplo2@gmail.com</p>
-              </div>
-
-              <div className="flex items-center">
-                <h4 className="mr-2 text-lg font-semibold text-cyan-300">Email:</h4>
-                <p className="text-sm">ejemplo3@gmail.com</p>
-              </div>
-              <div className="flex items-center justify-center gap-4 m-7">
+              <div className="flex items-center space-x-3">
                 <FaLinkedin className="text-2xl transition text-cyan-300 hover:text-white" />
+                <a href="http://linkedin.com/in/soylion" className="text-cyan-300 hover:text-white">
+                  linkedin.com/in/soylion
+                </a>
+              </div>
+
+              <div className="flex items-center space-x-3">
                 <FaGithub className="text-2xl transition text-cyan-300 hover:text-white" />
+                <a
+                  href="https://github.com/soylioon/mi_portafolio-v1.5/tree/main/portafolio-v1.5"
+                  className="text-cyan-300 hover:text-white"
+                >
+                  soylioon
+                </a>
+              </div>
+
+              <div className="flex items-center space-x-3">
                 <FaEnvelope className="text-2xl transition text-cyan-300 hover:text-white" />
+                <a href="mailto:soylion.com@gmail.com" className="text-cyan-300 hover:text-white">
+                  soylion@gmail.com
+                </a>
+              </div>
+
+              <div className="mt-4 floating-title">
+                <Icon_contact />
               </div>
             </div>
           </div>
@@ -44,34 +54,7 @@ function Contact() {
             <div className="flex justify-center">
               <h2 className="mb-8 text-4xl text-center font-futuristic text-cyan-300 floating-title">Your data</h2>
             </div>
-            <form className="space-y-6">
-              <input
-                type="text"
-                placeholder="Your Name"
-                className="w-full px-4 py-3 text-sm text-white border border-gray-700 rounded-lg outline-none bg-black/30 focus:border-cyan-300"
-              />
-
-              <input
-                type="email"
-                placeholder="Your Email"
-                className="w-full px-4 py-3 text-sm text-white border border-gray-700 rounded-lg outline-none bg-black/30 focus:border-cyan-300"
-              />
-
-              <textarea
-                rows="5"
-                placeholder="Your Message..."
-                className="w-full px-4 py-3 text-sm text-white border border-gray-700 rounded-lg outline-none bg-black/30 focus:border-cyan-300"
-              ></textarea>
-
-              <div className="flex justify-center">
-                <button
-                  type="button"
-                  className="px-8 py-3 text-sm border rounded-lg border-cyan-300 text-cyan-300 hover:bg-cyan-300 hover:text-black transition-all duration-300 hover:scale-[1.05]"
-                >
-                  Send Message
-                </button>
-              </div>
-            </form>
+            <FormContact />
           </div>
         </div>
       </div>

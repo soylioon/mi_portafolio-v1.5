@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import ButtonCV from '@/components/buttons/ButtonCV';
+import ButtonCV from '@/components/buttons/ButtonCV/CV';
 
 function NavBar() {
   return (
@@ -31,7 +31,9 @@ function NavBar() {
           </Link>
         </nav>
 
-        <ButtonCV />
+        <div className="mr-4">
+          <ButtonCV />
+        </div>
       </div>
     </>
   );
