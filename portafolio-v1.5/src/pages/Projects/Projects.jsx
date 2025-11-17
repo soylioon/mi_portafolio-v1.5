@@ -33,10 +33,16 @@ function proyectos() {
       link: '#',
     },
     {
-      title: 'Full Stack Combo System',
+      title: 'Full Stack Combo System', 
       description: 'Hybrid solution mixing UI/UX, backend APIs, and modern front-end workflow.',
       tech: ['Node.js', 'React', 'Express', 'MySQL'],
       link: '#',
+    },
+    {
+      title: 'my AI personal',
+      description: 'Hybrid solution mixing UI/UX, and modern front-end workflow.',
+      tech: ['script.js', 'html', 'css'],
+      link: 'https://soylioon.github.io/AI-soylion/',
     },
   ];
 
